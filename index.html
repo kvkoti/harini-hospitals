@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harini Hospitals | Quality Healthcare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">✚</span>
+            Harini Hospitals
+        </div>
+
+        <button class="menu-btn" id="menuBtn"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        
+<nav class="nav" id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="marketing.html">Marketing Team</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tagline">YOUR HEALTH, OUR PRIORITY</p>
+                <h1>Care That Puts<br>Your Health First</h1>
+                <p>
+                    Compassionate care, modern facilities and
+                    patient-focused medical services for your family.
+                </p>
+                <a href="#contact" class="btn">Contact Our Team</a>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <p class="eyebrow">ABOUT OUR HOSPITAL</p>
+            <h2>Healthcare With Compassion</h2>
+            <p>
+                Our hospital website helps patients learn about
+                medical services, explore specialties and contact
+                our team for further information.
+            </p>
+        </section>
+
+        <section class="section services" id="services">
+            <p class="eyebrow">WHAT WE OFFER</p>
+            <h2>Our Medical Services</h2>
+
+            <div class="card-container">
+                <article class="card">
+                    <div class="card-icon">✚</div>
+                    <h3>Gastroenterology</h3>
+                    <p>Medical care for digestive system conditions.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">♡</div>
+                    <h3>General Medicine</h3>
+                    <p>Medical assessment and ongoing patient care.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">⚕</div>
+                    <h3>Surgical Care</h3>
+                    <p>Surgical consultations and treatment planning.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">☁</div>
+                    <h3>Pulmonology</h3>
+                    <p>Assessment and care for respiratory conditions.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section doctors" id="doctors">
+            <p class="eyebrow">OUR MEDICAL TEAM</p>
+            <h2>Meet Our Doctors</h2>
+            <p class="section-intro">
+                Add your hospital's verified doctor profiles below.
+            </p>
+
+            <div class="card-container">
+                <article class="doctor-card">
+                    <div class="doctor-icon">👨‍⚕️</div>
+                    <h3>Dr. Doctor Name</h3>
+                    <p>Medical Gastroenterology</p>
+                    <small>Add verified qualifications here</small>
+                </article>
+
+                <article class="doctor-card">
+                    <div class="doctor-icon">👨‍⚕️</div>
+                    <h3>Dr. Doctor Name</h3>
+                    <p>Surgical Gastroenterology</p>
+                    <small>Add verified qualifications here</small>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Contact Our Hospital</h2>
+            <p>Fill in the form to prepare an enquiry.</p>
+
+            <form id="contactForm">
+                <label for="patientName">Your Name</label>
+                <input type="text" id="patientName"
+                       placeholder="Enter your name" required>
+
+                <label for="patientPhone">Phone Number</label>
+                <input type="tel" id="patientPhone"
+                       placeholder="Enter your phone number"
+                       pattern="[0-9+() -]{7,20}" required>
+
+                <label for="department">Department</label>
+                <select id="department" required>
+                    <option value="">Select a department</option>
+                    <option>Gastroenterology</option>
+                    <option>General Medicine</option>
+                    <option>Surgical Care</option>
+                    <option>Pulmonology</option>
+                </select>
+
+                <label for="message">Your Enquiry</label>
+                <textarea id="message" rows="4"
+                          placeholder="How can we help?"></textarea>
+
+                <button type="submit" class="btn">
+                    Prepare Enquiry
+                </button>
+
+                <p id="formMessage" role="status"
+                   aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3>Harini Hospitals</h3>
+        <p>Quality care. Compassionate service.</p>
+        <p>&copy; <span id="year"></span> Hospital Website Demo</p>
+        <p class="disclaimer">
+            Demo website. Confirm hospital details before publishing.
+        </p>
+    </footer>
+
+</body>
+</html>

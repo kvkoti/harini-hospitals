@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Team | Harini Hospitals</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .marketing-hero {
+            background: linear-gradient(120deg, #e3f8f5, #f1f8ff);
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .marketing-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        .marketing-card {
+            flex: 1 1 220px;
+            max-width: 280px;
+            background: white;
+            padding: 28px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 18px #173c4a18;
+        }
+
+        .marketing-card .symbol {
+            font-size: 38px;
+        }
+
+        .marketing-card h3 {
+            color: #087f8c;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">✚</span>
+            Harini Hospitals
+        </div>
+
+        <button class="menu-btn" id="menuBtn"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#doctors">Doctors</a>
+            <a href="marketing.html">Marketing Team</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="marketing-hero">
+            <p class="eyebrow">HARINI HOSPITALS</p>
+            <h1>Marketing Team</h1>
+            <p>
+                Connecting patients and doctors through
+                effective hospital marketing and coordination.
+            </p>
+            <a href="index.html#contact" class="btn">
+                Contact Our Team
+            </a>
+        </section>
+
+        <section class="section">
+            <h2>Our Marketing Activities</h2>
+
+            <div class="marketing-grid">
+                <div class="marketing-card">
+                    <div class="symbol">🏥</div>
+                    <h3>Hospital Marketing</h3>
+                    <p>
+                        Promote hospital services, specialties
+                        and facilities.
+                    </p>
+                </div>
+
+                <div class="marketing-card">
+                    <div class="symbol">👨‍⚕️</div>
+                    <h3>Doctor Coordination</h3>
+                    <p>
+                        Coordinate with doctors, clinics and
+                        referring healthcare professionals.
+                    </p>
+                </div>
+
+                <div class="marketing-card">
+                    <div class="symbol">📍</div>
+                    <h3>Field Marketing</h3>
+                    <p>
+                        Manage field visits, hospital outreach
+                        and professional relationships.
+                    </p>
+                </div>
+
+                <div class="marketing-card">
+                    <div class="symbol">💻</div>
+                    <h3>Digital Marketing</h3>
+                    <p>
+                        Support website content, social media
+                        and digital awareness campaigns.
+                    </p>
+                </div>
+            </div>
+        </section>
+		
+        <!-- Marketing Persons Section -->
+        <section class="section" id="marketing-persons">
+            <p class="eyebrow">OUR PEOPLE</p>
+            <h2>Meet Our Marketing Team</h2>
+            <p>Meet the team connecting doctors, patients and our hospital.</p>
+
+            <div class="marketing-grid">
+
+                <div class="marketing-card person-card">
+                    <div class="person-icon">👨‍💼</div>
+                    <h3>Subbu 1</h3>
+                    <p><strong>BDE:</strong> Marketing Executive</p>
+                    <p><strong>Area:</strong> Guntur</p>
+                    <p><strong>Phone:</strong> 7901582344</p>
+                </div>
+
+                <div class="marketing-card person-card">
+                    <div class="person-icon">👨‍💼</div>
+                    <h3>Anand Paul</h3>
+                    <p><strong>Designation:</strong> Field Executive</p>
+                    <p><strong>Area:</strong> Nandhigamma</p>
+                    <p><strong>Phone:</strong> 7901536654</p>
+                </div>
+
+                <div class="marketing-card person-card">
+                    <div class="person-icon">👨‍💼</div>
+                    <h3>KV Koteswararo</h3>
+                    <p><strong>BDE:</strong> Busines marketing executive</p>
+                    <p><strong>Area:</strong> Machilipatnam</p>
+                    <p><strong>Phone:</strong> 7901675865</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <h3>Harini Hospitals</h3>
+        <p>Marketing Team</p>
+        <p>&copy; <span id="year"></span> Hospital Website Demo</p>
+    </footer>
+
+</body>
+</html>

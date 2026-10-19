@@ -1,0 +1,325 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #253746;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 7%;
+    background: #ffffff;
+    box-shadow: 0 2px 12px #00000012;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #087f8c;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    color: #08a58d;
+    margin-right: 5px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: #253746;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #087f8c;
+}
+
+.menu-btn {
+    display: none;
+    border: 0;
+    background: #087f8c;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    padding: 65px 9%;
+    background: linear-gradient(120deg, #e3f8f5, #f1f8ff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline,
+.eyebrow {
+    color: #087f8c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 54px);
+    line-height: 1.15;
+    margin: 12px 0;
+    color: #124454;
+}
+
+.hero-content > p:not(.tagline) {
+    max-width: 520px;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    background: #087f8c;
+    color: #ffffff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background: #065d67;
+}
+
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #124454;
+    font-size: 30px;
+    margin: 5px 0 20px;
+}
+
+.about > p:last-child {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.services {
+    background: #f5fafb;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card,
+.doctor-card {
+    flex: 1 1 210px;
+    max-width: 270px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 18px #173c4a12;
+    transition: transform 0.2s;
+}
+
+.card:hover,
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 36px;
+    color: #08a58d;
+}
+
+.card h3,
+.doctor-card h3 {
+    color: #124454;
+}
+
+.doctor-icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #e3f8f5;
+    font-size: 42px;
+}
+
+.section-intro {
+    color: #60717c;
+}
+
+.doctor-card p {
+    color: #087f8c;
+}
+
+.doctor-card small {
+    color: #60717c;
+}
+
+.contact {
+    background: #f5fafb;
+}
+
+#contactForm {
+    max-width: 520px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+#contactForm label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 5px;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd8dd;
+    border-radius: 5px;
+    background: #ffffff;
+    font: inherit;
+}
+
+#contactForm input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+    outline: 2px solid #087f8c;
+    border-color: transparent;
+}
+
+#formMessage {
+    overflow-wrap: anywhere;
+    color: #087f8c;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    background: #103e4b;
+    color: #ffffff;
+    padding: 28px 15px;
+}
+
+.footer h3 {
+    margin-bottom: 5px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #d8e8eb;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 14px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 10px 0;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .hero {
+        padding: 50px 7%;
+        min-height: 380px;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .card,
+    .doctor-card {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.person-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.person-card:hover {
+    transform: translateY(-5px);
+}
+
+.person-icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3f8f5;
+    border-radius: 50%;
+    font-size: 42px;
+}
+
+.person-card p {
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
